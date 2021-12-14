@@ -5,7 +5,8 @@
   "main": "src/index.ts",
   "scripts": {
     "watch": "tsc -w",
-    "dev": "nodemon -r source-map-support/register dist/index.js"
+    "dev": "nodemon -r source-map-support/register dist/index.js",
+    "debug": "node -r source-map-support/register dist/index.js"
   },
   "keywords": [],
   "author": "Junttila",
