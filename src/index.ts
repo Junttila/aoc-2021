@@ -1,4 +1,4 @@
-import solutions from './solutions/day14/solutions';
+import solutions from './solutions/day9/solutions';
 
 solutions.forEach((f, i) => {
   console.log('Start');
