@@ -1,4 +1,5 @@
 import { fileToArray } from '../scripts/fileToArray';
+import { median } from '../scripts/median';
 
 const filePath = 'src/solutions/day7/input.txt';
 const solutions: Array<() => string> = [
@@ -67,16 +68,5 @@ const solutions: Array<() => string> = [
     return lowestFuel.toString();
   },
 ];
-
-function median(array: number[], f: (a: number, b: number) => number) {
-  const sorted = array.slice().sort(f);
-
-  const middle = Math.floor(sorted.length / 2);
-
-  if (middle % 2 !== 0) {
-    return sorted[middle];
-  }
-  return (sorted[middle - 1] + sorted[middle]) / 2;
-}
 
 export default solutions;
